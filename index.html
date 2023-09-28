@@ -5,51 +5,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Proect3 - Group4 - Stocks</title>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="resources/style/style.css">
+
 </head>
+
+
+
 
 <body>
 
-  <div class="container">
-    
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)" ></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
-    </div>
-  </div>
+<center>
 
+<div style="width:1300px; text-align:left">
+<p><h2>Stocks</h2>
+<p><b>Project3</b> is intended to apply data collection, convert data to any database, visualize data using html, css, javascript  within a group. 
+<p><b>Group4</b> members are Ana <span style="color:lightgray">(data collection)</span>, 
+Hikmet  <span style="color:lightgray">(database)    </span>
+Abish   <span style="color:lightgray">(javascript), </span>, 
+and 
+Tyler   <span style="color:lightgray">(api)         </span>.
+
+</div>
+
+
+<div class="fullPage" > <!--overall-->
+<div>Top 100 companies in 2022-2023<br><br/></div>
+
+<div style="backgroundx:pink">
+
+Company
+
+<select id="company">
+<option>TSLA</option>
+<option>AMZN</option>
+</select>
+
+&nbsp; &nbsp; &nbsp; &nbsp; 
+Time Frame 
+
+<select id="year">
+<option>2022</option>
+<option>2023</option>
+</select>
+
+<select id="month">
+<option>Jan</option>
+<option>Feb</option>
+<option>Mar</option>
+<option>Apr</option>
+<option>May</option>
+<option>Jun</option>
+<option>Jul</option>
+<option>Aug</option>
+<option>Sep</option>
+<option>Oct</option>
+<option>Nov</option>
+<option>Dec</option>
+
+
+</select>
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<button style="height:30px">json</button>
+</div>
+
+
+<br/>
+
+
+
+<div id="graphArea">
+
+<canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+
+</div>
+
+
+
+
+
+
+
+
+</div> <!--overall-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./static/js/app.js"></script>
-  <script src="./static/js/bonus.js"></script>
+  <script src="./resources/js/app.js"></script>
+
+  <!--<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
+  
+  <!--<script src="./static/js/bonus.js"></script>-->
 
 </body>
 
